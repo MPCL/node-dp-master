@@ -9,8 +9,6 @@ const ipBlocker = require('./controllers/ipBlocker')
 
 const HEADER = Buffer.from('\xFF\xFF\xFF\xFF', 'ascii')
 
-ipBlocker('5.63.52.2')
-
 server.on('listening', () => {
     console.log(`Server is listening on: ${server.address().address}:${server.address().port}`)
 })
